@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url(https://housing.com/news/wp-content/uploads/2023/05/SuperSport-Park-Cricket-Stadium-Fact-guide-f.jpg);
+  font-family:Source Code Pro;
+  background-size: contain; hi shlok
+  
+}
+img {
+  width: 150px;
+  height: auto;
+  border: solid #ffbb00 3px;
+}
+#game {
+  height: 100%;
+  width:auto;
+  border: 3px solid red;
+  margin: 10px;
+  padding: 10px
+}
+#upgrades {
+  text-align: right;
+  color: #e3e3e3;
+  
+}
