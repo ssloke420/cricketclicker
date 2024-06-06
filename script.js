@@ -7,7 +7,7 @@ let cps = 1;
 
 function handleClick() {
   balls += cps;
-  count.innerHTML = balls + " cricket balls";
+  count.innerHTML = Math.floor(balls) + " cricket balls";
 }
 
 function buy(amt1, amt2) {
@@ -84,3 +84,12 @@ setInterval(function() {
   document.cookie = "cps=" + cps + ";path=/";
   document.cookie = "balls=" + balls + ";path=/";
 }, 1000);
+
+function clearProgress() {
+  balls = 0;
+  bps = 0;
+  cps = 1;
+  document.cookie.split(';').forEach(function(c) {
+    document.cookie = c.trim().split('=')[0] + '=;' + 'expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+  });
+}

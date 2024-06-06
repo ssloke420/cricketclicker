@@ -3,25 +3,45 @@ html {
   width: 100%;
 }
 body {
-  background-image: url(https://housing.com/news/wp-content/uploads/2023/05/SuperSport-Park-Cricket-Stadium-Fact-guide-f.jpg);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/015/708/359/non_2x/cricket-stadium-with-neon-lights-arena-vector.jpg);
   font-family:Source Code Pro;
-  background-size: contain; hi shlok
+  background-size: contain;
+  font-size: 24pt;
   
 }
 img {
-  width: 150px;
+  width: 500px;
   height: auto;
   border: solid #ffbb00 3px;
 }
-#game {
-  height: 100%;
-  width:auto;
-  border: 3px solid red;
-  margin: 10px;
-  padding: 10px
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%; /* Ensure container takes up full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
-#upgrades {
-  text-align: right;
-  color: #e3e3e3;
-  
+
+#game, #upgrades {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  padding: 10px;
+  margin: 10px;
+  /* border: 1px solid #ccc; /* Optional: Add border for visual separation */ 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+  width: 45%; /* Ensure each section takes up an appropriate amount of space */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#game img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#upgrades button {
+  margin: 5px 0; /* Add margin between buttons */
+  width: 200px; /* Make buttons full-width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }

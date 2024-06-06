@@ -7,27 +7,32 @@
   <title>Cricket Clicker</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+<!---Nihar let me know when you add something so I can push it to github--->
 
 <body>
-  <div id = "game">
-  <h2 id="count">0 cricket balls</h2>
-  <h2 id = "ps">0 cricket balls per second</h2>
-  <img id="cricket" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Cricketball.png/220px-Cricketball.png"/>
+<div id="container">
+  <div id="game">
+    <h2 id="count">0 cricket balls</h2>
+    <h2 id="ps">0 cricket balls per second</h2>
+    <img id="cricket"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Cricketball.png/220px-Cricketball.png" />
   </div>
-  <div id = "upgrades">
+  <div id="upgrades">
     <p id="error"></p>
-    <button onclick = buy(10,1)>Plastic Bat | 10</button>
-    <button onclick = buy(100,5)>Stadium | 100</button>
-    <button onclick = buy(500,15)>Country | 500 </button>
-    <button onclick = buy(1000,50)>Wickets | 1000</button>
-    <button onclick = buy(5000,100)>Fielder Army | 5000</button>
-    <button onclick = buy(10000,500)>Batsmen Army| 10000</button>
-    <button onclick = buy(50000,1000)>Bowlers Army | 50000</button>
-    <button onclick = buy(100000,5000)>Ravindra Jadeja | 100,000</button>
-    <button onclick = buy(500000,10000)>Sachin Tendulkar | 500000
-    <button onclick = buy (1000000000,50000000000)>Virat Kohli | 1000000000</button>
-    <button onclick = cpsup()>CPS upgrade | 10000</button>
+    <button onclick=buy(10,1)>Plastic Bat | 10</button>
+    <button onclick=buy(100,5)>Stadium | 100</button>
+    <button onclick=buy(500,15)>Country | 500 </button>
+    <button onclick=buy(1000,50)>Wickets | 1000</button>
+    <button onclick=buy(5000,100)>Fielder Army | 5000</button>
+    <button onclick=buy(10000,500)>Batsmen Army | 10000</button>
+    <button onclick=buy(50000,1000)>Bowlers Army | 50000</button>
+    <button onclick=buy(100000,5000)>Ravindra Jadeja | 100,000</button>
+    <button onclick=buy(500000,10000)>Sachin Tendulkar | 500000
+      <button onclick=buy (1000000000,50000000000)>Virat Kohli | 1000000000</button>
+      <button onclick=cpsup()>CPS upgrade | 10000</button>
+      <button onclick="clearProgress()">Clear Progress</button>
   </div>
+</div>
   <script src="script.js"></script>
 </body>
 
